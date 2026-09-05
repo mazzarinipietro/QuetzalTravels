@@ -64,7 +64,7 @@
 
 
 .item:nth-child(1) button {
-    background-image: url(/images/Costa\ rica\ ButtonImage.webp);
+    background-image: url(../images/Costa\ rica\ ButtonImage.webp);
 }
 
 .item:nth-child(2) button {
@@ -72,19 +72,19 @@
 }
 
 .item:nth-child(3) button {
-    background-image: url(/images/Belize\ ButtonImage.png);
+    background-image: url(../images/Belize\ ButtonImage.png);
 }
 
 .item:nth-child(4) button {
-    background-image: url(/images/Panama\ ButtonImage.png);
+    background-image: url(../images/Panama\ ButtonImage.png);
 }
 
 .item:nth-child(5) button {
-    background-image: url(/images/Mexico\ ButtonImage.png);
+    background-image: url(../images/Mexico\ ButtonImage.png);
 }
 
 .item:nth-child(6) button {
-    background-image: url(/images/Perù\ ButtonImage.jpg);
+    background-image: url(../images/Perù\ ButtonImage.jpg);
 }
 
 .item p {
