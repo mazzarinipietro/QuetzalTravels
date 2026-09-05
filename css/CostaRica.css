@@ -1,0 +1,324 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.fill img{
+    object-fit: fill !important;
+}
+
+.Hero-Section {
+    /* Flex per centrare il titolo nella hero */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Main {
+    background-color: rgb(249, 246, 241);
+    padding-bottom: 1rem;
+}
+
+.Footer {
+    margin-top: 0;
+}
+
+.HeroCenter {
+    /* Contenitore che centra titolo e sottotitolo nella hero */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+
+.HeroTitle {
+    font-size: clamp(3.5rem, 10vw, 7rem);
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 6px rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+.HeroSubtitle {
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    letter-spacing: 1px;
+    margin: 0.5rem 0 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.NavPills {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1.5rem 0 2.5rem;
+}
+
+.Pill {
+    border: 1px solid rgb(200, 146, 42);
+    color: rgb(200, 146, 42);
+    border-radius: 50px;
+    padding: 0.4rem 1.3rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.Pill:hover {
+    color: white;
+    background-color: rgb(179, 132, 44);
+    transform: scale(1.1);
+}
+
+.Section {
+    padding: 3rem 6% 2rem;
+}
+
+.Label {
+    font-size: 0.75rem;
+    letter-spacing: 3.5px;
+    margin: 0 0 0.5rem;
+}
+
+.SectionTitle {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    color: black;
+    margin: 0 0 1.5rem;
+}
+
+.SectionImg {
+    width: 100%;
+    height: 380px;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.SectionImg img{
+    width: 300px;
+    height: 300px;
+}
+
+.SectionText {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: rgb(51, 51, 51);
+    margin-bottom: 1rem;
+}
+
+.card:hover{
+    transform: scale(1.01);
+    cursor: default;
+}
+
+/* Contenitori card — Bootstrap row gestisce colonne e gap */
+.Cards3,
+.Cards6,
+.Cards4 {
+    margin-top: 1.5rem;
+}
+
+/* Card con immagine — Bootstrap card + Oscurante2 + card-img-overlay */
+.ImgCard {
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    position: relative;
+}
+
+.ImgCard .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Override OverCard nel contesto ImgCard */
+.ImgCard .OverCard {
+    margin: 0;
+    padding: 0 1rem 0.7rem;
+}
+
+.ImgCard .OverCard h5 {
+    font-size: 1.05rem;
+    margin: 0 0 0.25rem;
+}
+
+.ImgCard .OverCard p {
+    font-size: 0.78rem;
+    margin: 0 0 0.5rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Sottolineatura dorata decorativa */
+.CardAccent {
+    width: 2rem;
+    height: 3px;
+    background-color: rgb(200, 146, 42);
+    border-radius: 2px;
+}
+
+/* Card animali */
+.AnimalCard {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.AnimalImg {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.AnimalInfo {
+    padding: 0.8rem 0.75rem 1rem;
+}
+
+.AnimalName {
+    font-size: 1.1rem;
+    color: black;
+    margin: 0 0 0.2rem;
+}
+
+.AnimalHabitat {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    margin: 0 0 0.5rem;
+}
+
+.AnimalDesc {
+    font-size: 0.82rem;
+    color: rgb(68, 68, 68);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Sezione stagioni */
+.Stagioni {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.SeasonCard {
+    background-color: rgb(240, 236, 228);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.SeasonCardDry {
+    background-color: rgb(245, 240, 227);
+}
+
+.SeasonIcon {
+    font-size: 1.8rem;
+    background-color: rgba(200, 146, 42, 0.12);
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.SeasonIconDry {
+    background-color: rgba(200, 146, 42, 0.18);
+}
+
+.SeasonName {
+    font-size: 1.25rem;
+    color: black;
+}
+
+.SeasonDates {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.SeasonDesc {
+    font-size: 0.88rem;
+    color: rgb(68, 68, 68);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.MonthRow {
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+}
+
+.Month {
+    background-color: rgb(229, 224, 216);
+    color: rgb(102, 102, 102);
+    border-radius: 50px;
+    padding: 0.22rem 0.65rem;
+    font-size: 0.78rem;
+    display: inline-block;
+}
+
+.MonthGreen {
+    background-color: rgb(74, 124, 78);
+    color: white;
+}
+
+.MonthGold {
+    background-color: rgb(200, 146, 42);
+    color: white;
+}
+
+/* Banner prenotazione */
+.BookSection {
+    background-color: rgb(26, 46, 26);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.8rem 6%;
+    border-radius: 16px;
+    margin: 0 6% 2rem;
+}
+
+.BookText {
+    color: white;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    margin: 0;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.BookButton {
+    padding: 0.7rem 1.8rem;
+    border-radius: 8px;
+    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+@media (max-width: 63.8rem) {
+    .Stagioni {
+        grid-template-columns: 1fr;
+    }
+
+    .BookSection {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 36rem) {
+    .SectionImg {
+        height: 220px;
+    }
+}

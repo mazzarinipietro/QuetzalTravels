@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&display=swap');
+
+body img {
+    object-fit: cover;
+}
+
+.PlayfairFont,
+.OverText h1,
+.MainText h2,
+.OverCard h5 {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.InterFont .InterFont p,
+.ContactButton,
+.PlanButton,
+.ExploreButton,
+.OverText p,
+.OverCard p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+button,
+.navbar-toggler {
+    color: white;
+    background-color: rgb(200, 146, 42) !important;
+    border-color: transparent;
+    transition: all 0.2s;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: rgb(183, 129, 47) !important;
+}
+
+.BackImage {
+    /* Immagine di background */
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.Oscurante {
+    /* Rende il background  image più scuro */
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.Oscurante2 {
+    /* Rende il background  image più scuro per le card*/
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.InterFont p:first-child {
+    letter-spacing: 2.5px;
+}
+
+.InterFont p:last-child {
+    letter-spacing: 2.8px;
+    text-shadow: 0 0 14px rgba(0, 0, 0, 0.9), 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+.Hero-Section {
+    /* Determina altezza di Hero Section */
+    height: 100vh;
+}
+
+.Hero,
+.Hero a {
+    /* Sezione Hero (100vh) pagina */
+    color: white;
+}
+
+.Hero button {
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.navbar {
+    margin-top: 1rem;
+}
+
+.NavOptions {
+    transition: all 0.3s;
+}
+
+.NavOptions:hover {
+    transform: scale(1.5);
+}
+
+.Logo {
+    /* Logo sito */
+    width: 58px;
+}
+
+.Shadow {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.GoldText {
+    color: rgb(200, 146, 42);
+}
+
+.ContactButton {
+    margin-left: 1.2rem !important;
+    letter-spacing: 1.5px;
+}
+
+.OverText {
+    /* Tutti gli elementi sotto navbar in header */
+    height: 100vh;
+    position: relative;
+    color: white;
+    flex-direction: column;
+    margin: 10% 0 0 10%;
+}
+
+.OverText h1 {
+    font-size: clamp(2.9rem, 6vw, 4rem);
+}
+
+.OverText p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.OverText button {
+    margin: 15px 10px 0 0;
+    letter-spacing: 1px;
+}
+
+.Main {
+    /* Sezione Main */
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: -8% 10px 0;
+    border-radius: 17px;
+    background-color: white;
+}
+
+.MainText {
+    /* Testo prima di Cards */
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.MainText p {
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 3.5px;
+}
+
+.MainText h2 {
+    color: black;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.line {
+    /* hr (linea) sotto MainText */
+    height: 4px;
+    width: 3%;
+    border-radius: 15px;
+    margin: 17px auto 0;
+    background-color: rgb(200, 146, 42);
+}
+
+.grid-container {
+    /* Div contenente le card grid-container */
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(6.3rem, 33rem));
+    gap: 1.25rem;
+    padding-top: 50px;
+}
+
+
+.grid-container .item {
+    height: 20vh;
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+.card {
+    transition: all 0.3s ease-in-out;
+}
+
+.OverCard {
+    /* Testo sovrapposto a card grid-container */
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 1.0);
+    margin-left: 10px;
+}
+
+.OverCard h5 {
+    margin: 0;
+}
+
+.OverCard h5 {
+    font-size: 1.7rem;
+}
+
+.OverCard p {
+    font-size: 0.8rem;
+}
+
+.OverCard p:last-child {
+    margin-top: -10px;
+}
+
+.fa-location-dot {
+    /* Piccolo spazio tra icona e testo su Overcard second p */
+    margin-right: 3px;
+
+}
+
+.Footer {
+    /* Sezione Footer della pagina */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8%;
+    background-color: rgb(23, 29, 18);
+    height: auto;
+    width: 100%;
+}
+
+.Fleft,
+.Fright {
+    margin: 2rem 10rem;
+}
+
+.Fleft p,
+.Fright {
+    font-size: 0.9rem;
+}
+
+.Fleft {
+    /* Div a sinistra del footer */
+    display: flex;
+    flex-direction: column;
+}
+
+.SocialSide {
+    /* Div contenente il testo sotto il logo e icone social  */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.Socials,
+.Socials a {
+    /* Div contenente le icone social */
+    display: flex;
+    gap: 1.25rem;
+    color: rgb(200, 146, 42);
+    text-decoration: none;
+}
+
+.Fright {
+    /* Div a destra del footer */
+    display: flex;
+    flex-direction: column;
+}
+
+.EnterEmail {
+    position: relative;
+    overflow: hidden;
+}
+
+.EnterEmail input {
+    /* Campo per "inserire" l'indirizzo email */
+    background-color: transparent;
+    border: 1px rgba(255, 255, 255, 0.584) solid;
+    color: rgba(255, 255, 255, 0.632);
+    border-radius: 3px;
+    padding: 5px;
+    width: 18rem;
+}
+
+.EnterEmail button {
+    position: absolute;
+    right: 0;
+    padding: 4px;
+    width: 2.5rem;
+    border-radius: 3px;
+}
+
+.hr {
+    /* Linea divisioria tra Footer e Footer Copiright */
+    margin: 0 10rem;
+    height: 5px;
+    width: 100%;
+    color: grey;
+}
+
+.Copiright div {
+    /* Sezione di testo in fonto al Footer */
+    margin: 0.5rem 10rem;
+}
+
+.Copiright div p {
+    font-size: 10px;
+    color: rgb(127, 126, 126);
+}
+
+
+@media (hover: hover) {
+    .card:hover {
+        transform: scale(1.03);
+        cursor: pointer;
+    }
+
+    .Socials a:hover {
+        transform: scale(1.5);
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 24rem) {
+    .ContactButton {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 26.3rem) {
+    .navbar-collapse {
+        display: flex;
+        justify-content: start !important;
+    }
+
+    .ContactButton {
+        margin-top: 2% !important;
+    }
+}
+
+@media (max-width: 36rem) {
+
+    .OverText,
+    .OverText a {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding-bottom: 45%;
+    }
+
+    .OverText h1,
+    .OverText p {
+        text-align: center;
+    }
+
+    .ExploreButton {
+        width: 80%;
+    }
+}
+
+@media (max-width: 49.5rem) {
+    .hr {
+        width: clamp(10rem, 40vw, 30rem);
+    }
+
+    .Copiright div {
+        margin: 0;
+    }
+
+    .Footer img:not(.Logo) {
+        width: 100%;
+    }
+
+    .Fleft,
+    .Fright {
+        margin: 0 0 10% 0 !important;
+    }
+
+    .Fright {
+        margin-right: 3rem !important;
+    }
+}
+
+@media (max-width: 63.8rem) {
+    .ContactButton {
+        margin: 0;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: end;
+    }
+
+    .Footer {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hr {
+        width: 80%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 81.7rem) {
+
+    .Fleft,
+    .Fright {
+        margin: 2rem 6rem;
+    }
+}

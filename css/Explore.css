@@ -1,0 +1,185 @@
+.NavOptions a {
+    /* Div contenente le opzioni di navigazione aggiuntive della navbar come il home button */
+    color: white;
+}
+
+.Map-Wrapper {
+    /* Div contenete la Mappa interattiva */
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-top: 2%;
+}
+
+.Map {
+    width: 50%;
+    height: 50vh;
+}
+
+.grid-container {
+    /* Div contenente i pulsanti interattivi e le card delle attrazioni del paese selezionato */
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+.grid-container button {
+    /* Bottoni del grid container */
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.grid-container .item {
+    height: auto;
+}
+
+.item,
+.item button,
+.item:nth-child(8),
+.item:nth-child(9),
+.item:nth-child(10) {
+    height: 7vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    transition: all 0.3s;
+}
+
+
+.item a {
+    display: none;
+}
+
+.item:nth-child(1) button,
+.item:nth-child(2) button,
+.item:nth-child(3) button,
+.item:nth-child(4) button,
+.item:nth-child(5) button,
+.item:nth-child(6) button {
+    background-size: 100% 100%;
+}
+
+
+.item:nth-child(1) button {
+    background-image: url(/images/Costa\ rica\ ButtonImage.webp);
+}
+
+.item:nth-child(2) button {
+    background-image: url(/images/Guatemala\ ButtonImage.jpeg);
+}
+
+.item:nth-child(3) button {
+    background-image: url(/images/Belize\ ButtonImage.png);
+}
+
+.item:nth-child(4) button {
+    background-image: url(/images/Panama\ ButtonImage.png);
+}
+
+.item:nth-child(5) button {
+    background-image: url(/images/Mexico\ ButtonImage.png);
+}
+
+.item:nth-child(6) button {
+    background-image: url(/images/Perù\ ButtonImage.jpg);
+}
+
+.item p {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0;
+    height: fit-content;
+    letter-spacing: 2.4px;
+}
+
+.item:nth-child(1) p,
+.item:nth-child(2) p,
+.item:nth-child(3) p,
+.item:nth-child(4) p,
+.item:nth-child(5) p,
+.item:nth-child(6) p {
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+}
+
+
+.item:nth-child(1) i,
+.item:nth-child(2) i,
+.item:nth-child(3) i,
+.item:nth-child(4) i,
+.item:nth-child(5) i,
+.item:nth-child(6) i {
+    margin: 4% 0 3% 0;
+    color: rgb(200, 146, 42);
+}
+
+.item:nth-child(8),
+.item:nth-child(9),
+.item:nth-child(10) {
+    /* Permette di non mostrare l'elemento fino a che non sara target (+ javascript) */
+    height: 180px;
+    display: none;
+    background-size: 100%;
+}
+
+.item:nth-child(8) i,
+.item:nth-child(9) i,
+.item:nth-child(10) i {
+    transition: all 0.3s;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.item:nth-child(8) p,
+.item:nth-child(9) p,
+.item:nth-child(10) p,
+.item:nth-child(8) small,
+.item:nth-child(9) small,
+.item:nth-child(10) small {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.CountryText {
+    /* Testo prima delle  Top attractions grid */
+    grid-column: 1 / -1;
+    padding: 3rem 0 0 0;
+    display: none;
+}
+
+.CountryText span:last-child {
+    font-size: 1.8rem;
+}
+
+.CountryText span:first-child {
+    font-size: 1.8rem;
+}
+
+@media (hover:hover) {
+
+    .item:hover:not(.item:nth-child(8), .item:nth-child(9), .item:nth-child(10)),
+    .item:nth-child(8) i:hover,
+    .item:nth-child(9) i:hover,
+    .item:nth-child(10) i:hover {
+        transform: scale(1.07);
+    }
+}
+
+@media (min-width: 1267px) and (max-width: 1908px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 20vw) !important;
+    }
+
+    .item:nth-child(1) i,
+    .item:nth-child(2) i,
+    .item:nth-child(3) i,
+    .item:nth-child(4) i,
+    .item:nth-child(5) i,
+    .item:nth-child(6) i {
+        margin: 1% 0 2% 0;
+        color: rgb(200, 146, 42);
+    }
+}
