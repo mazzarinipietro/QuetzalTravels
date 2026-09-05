@@ -68,7 +68,7 @@
 }
 
 .item:nth-child(2) button {
-    background-image: url(/images/Guatemala\ ButtonImage.jpeg);
+    background-image: url(../images/Guatemala\ ButtonImage.jpeg);
 }
 
 .item:nth-child(3) button {
